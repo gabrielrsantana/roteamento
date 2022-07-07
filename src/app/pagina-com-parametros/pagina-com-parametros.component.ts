@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ConnectableObservable } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-pagina-com-parametros',
@@ -15,20 +15,15 @@ export class PaginaComParametrosComponent implements OnInit {
 
   ngOnInit(): void {
     // quando tiver acesso ao parametro da url traz o Observer,converte para numero e mostra no template
-    this.route.paramMap.subscribe(
-      params => { this.id = Number(params.get("id"))
-      
-      this.idade = Number(params.get("idade"))
-      console.log(this.idade);
-      this.nome = params.get("nome")
+    this.route.paramMap.subscribe(params => {
+      this.id = Number(params.get("id"))
     }
     );
        
-    // this.route.paramMap.subscribe(params => {
-    //   this.idade = Number(params.get('idade'));
-    //   this.nome = params.get('nome');
-    //   console.log(this.nome);
-    // })
+    this.route.queryParamMap.subscribe(param => {
+      this.idade = Number(param.get('idade'));
+      this.nome = param.get('nome');
+      })
   }
 
 }

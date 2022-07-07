@@ -1,3 +1,3 @@
-<h2>parametro da rota {{ id }}</h2>
-<p>Query param de nome:{{ nome }}</p>
-<p>Query param de idade:{{ idade }}</p>
+<h2>parametro da rota {{ id }} </h2>
+<p *ngIf="nome" >Query param de nome:{{ nome }}</p>
+<p *ngIf="idade">Query param de idade:{{ idade }}</p>
