@@ -1,6 +1,8 @@
 <h2>Login</h2>
-<label for="email">email</label>
+<label for="email">email</label><br>
 <!-- para usar o ngModel tem que importar o FormsModule no app.module.ts -->
-<input type="text" id="email" [(ngModel)]="email">
-<label for="senha"></label>
+<input type="text" id="email" [(ngModel)]="email"><br>
+<label for="senha">Senha:</label><br>
 <input type="text" id="password" [(ngModel)]="senha">
+<br>
+<button (click)="login()">Login</button>
