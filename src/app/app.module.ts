@@ -8,6 +8,8 @@ import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.componen
 import { PaginaComParametrosComponent } from './pagina-com-parametros/pagina-com-parametros.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,11 +21,13 @@ import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.co
     SegundaPaginaComponent,
     PaginaComParametrosComponent,
     PaginaNaoEncontradaComponent,
-    PaginaProtegidaComponent
+    PaginaProtegidaComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
 
 
   ],
