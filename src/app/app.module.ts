@@ -7,6 +7,7 @@ import { PrimeiraPaginaComponent } from './primeira-pagina/primeira-pagina.compo
 import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.component';
 import { PaginaComParametrosComponent } from './pagina-com-parametros/pagina-com-parametros.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.component';
 
 
 
@@ -17,7 +18,8 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao
     PrimeiraPaginaComponent,
     SegundaPaginaComponent,
     PaginaComParametrosComponent,
-    PaginaNaoEncontradaComponent
+    PaginaNaoEncontradaComponent,
+    PaginaProtegidaComponent
   ],
   imports: [
     BrowserModule,
