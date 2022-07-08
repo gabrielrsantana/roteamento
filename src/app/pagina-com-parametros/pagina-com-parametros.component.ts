@@ -15,8 +15,8 @@ export class PaginaComParametrosComponent implements OnInit {
 
   ngOnInit(): void {
     // quando tiver acesso ao parametro da url traz o Observer,converte para numero e mostra no template
-    this.route.paramMap.subscribe(params => {
-      this.id = Number(params.get("id"))
+    this.route.paramMap.subscribe(param => {
+      this.id = Number(param.get("id"))
     }
     );
        
